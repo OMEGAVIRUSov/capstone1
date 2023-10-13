@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Account</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/capstone1/css/bootstrap.css" rel="stylesheet">
+        
+        <style style="display: block;">
+            @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+            body {
+                font-family: 'Fredoka One', cursive; 
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                display: flex; 
+                flex-direction: column;
+            }
+            button {
+                height: 100%;
+                background: transparent;
+                color: white;
+                width: 10%;
+                font-size: large;
+                border: 0px;
+            }
+            button:hover {
+                background: white;
+                color: black;
+            }
+            ::-webkit-scrollbar {
+                width: 0px;
+                background: transparent;
+            }
+            #login-button {
+                height: 55px;
+                background: #00c363;
+                color: white;
+                width: 35%;
+                font-size: large;
+                border: 0px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+            }
+            #login-button:hover {
+                background: white;
+                color: black;
+                border: 3px solid #00c363;
+            }
+            input {
+                text-align: center;
+                border: 3px solid #00c363;
+                border-radius: 10px;
+                margin: 15px;
+                width: 70%; 
+                height: 60px;
+                
+            }
+            .nav-bar {
+                background-color: #00c363;
+                height: 8vh;
+                width: 100%;
+            }
+            #main-body {
+                height: 84vh;
+                width: 100%;
+                padding: 0;
+                overflow: scroll;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .login-box {
+                width: 100%;
+                height: 65vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .login-box-container {
+                width: 80%;
+                display: flex;
+                border: 6px solid #00c363;
+                border-radius: 25px;
+            }
+            .login-box-half {
+                width: 50%
+            }
+            .logo-container {
+                width: 80%;
+                height: 30%;
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .clickable-text {
+                text-decoration: underline; 
+                color: rgb(133, 27, 255); 
+                margin-top: 10px; 
+                cursor: pointer;
+            }
+            .clickable-text:hover {
+                text-decoration: underline; 
+                color: rgb(27, 190, 255); 
+                margin-top: 10px; 
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="nav-bar"></div>
+
+        <div id="main-body" class="container">
+            
+                <div class="login-box-container">
+                    <div class="login-box-half">
+                        <div class="login-box">
+                            <div class="logo-container">
+                                <img style="width: 80%; height: 82%; object-fit: cover;" src="images\giovannilogo.png" alt="">
+                                <h3 style="font-size: large;">Giovannis Car Detailing</h3>
+                            </div>
+                            <h4 style="margin: 10px;">How did you hear about us?</h4>
+                            <table style="width: 75%; display: flex; align-items: flex-start;">
+                                <tr style="display: flex; align-items: center;">
+                                    <th>
+                                        <input type="checkbox" style="height: 25px;">
+                                    </th>
+                                    <th>
+                                        <div style="height: 25px; margin-left: 5px; font-weight: 500;">From a friend</div>
+                                    </th>
+                                </tr>
+                                <tr style="display: flex; align-items: center;">
+                                    <th>
+                                        <input type="checkbox" style="height: 25px;">
+                                    </th>
+                                    <th>
+                                        <div style="height: 25px; margin-left: 5px; font-weight: 500;">Business Card</div>
+                                    </th>
+                                </tr>
+                                <tr style="display: flex; align-items: center;">
+                                    <th>
+                                        <input type="checkbox" style="height: 25px;">
+                                    </th>
+                                    <th>
+                                        <div style="height: 25px; margin-left: 5px; font-weight: 500;">Social Media</div>
+                                    </th>
+                                </tr>
+                                <tr style="display: flex; align-items: center;">
+                                    <th>
+                                        <input type="checkbox" style="height: 25px;">
+                                    </th>
+                                    <th>
+                                        <div style="height: 25px; margin-left: 5px; font-weight: 500;">Other</div>
+                                    </th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="login-box-half">
+                        <div class="login-box">
+                            <input type="text" placeholder="Username" style="margin-top: 0px;">
+                            <input type="text" placeholder="Password" style="margin-top: 0px; -webkit-text-security: circle;">
+                            <input type="text" placeholder="Confirm Password" style="margin-top: 0px; -webkit-text-security: circle;">
+                            <input type="text" placeholder="First + Last Name" style="margin-top: 0px;">
+                            <input type="text" placeholder="Email" style="margin-top: 0px;">
+                            <input type="text" placeholder="Phone Number" style="margin-top: 0px;">
+                            <a href="index.html" id="login-button">Register</a>
+                            <a href="index.html" class="clickable-text">Already have an account? Sign in!</a>
+                        </div>
+                    </div>
+                </div>  
+                 
+            </div>
+            <div class="nav-bar" style="display: flex; flex-direction: column;">
+            <p style="margin-left: 3%; margin-top: 0.3%; color: white;">Phone: (412)-315-8640</p>
+                <p style="margin-left: 3%; color: white;">Email: dpkle123@gmail.com</p>
+            <script src="/capstone1/scripts/bootstrap.bundle.js"></script> 
+        </div>
+
+        
+    </body>
+</html>

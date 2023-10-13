@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/capstone1/css/bootstrap.css" rel="stylesheet">
+        
+        <style style="display: block;">
+            @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+            body {
+                font-family: 'Fredoka One', cursive; 
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                display: flex; 
+                flex-direction: column;
+            }
+            .nav-button {
+                display: flex;
+                height: 100%;
+                background: transparent;
+                color: white;
+                width: 10%;
+                font-size: large;
+                border: 0px;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                font-size: large;
+            }
+            .nav-button:hover {
+                background: white;
+                color: black;
+            }
+            ::-webkit-scrollbar {
+                width: 0px;
+                background: transparent;
+            }
+            #login-button {
+                height: 55px;
+                background: #00c363;
+                color: white;
+                width: 35%;
+                font-size: large;
+                border: 0px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+            }
+            #login-button:hover {
+                background: white;
+                color: black;
+                border: 3px solid #00c363;
+            }
+            .newbutton {
+                text-align: center;
+                border: 3px solid #00c363;
+                border-radius: 10px;
+                margin: 15px;
+                width: 30%; 
+                height: 40px;
+            }
+            input {
+                text-align: center;
+                border: 3px solid #00c363;
+                border-radius: 10px;
+                margin: 5px;
+                width: 60%; 
+                height: 40px;
+                
+            }
+            #extra {
+                height: 90px;
+                align-items: baseline;
+                
+            }
+            .nav-bar {
+                display: flex;
+                background-color: #00c363;
+                height: 8vh;
+                width: 100%;
+            }
+            #main-body {
+                height: 84vh;
+                width: 100%;
+                padding: 0;
+                overflow: scroll;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .login-box {
+                width: 100%;
+                height: 65vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .login-box-container {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+            .login-box-half {
+                width: 48%;
+                
+                display: flex;
+                border: 6px solid #00c363;
+                border-radius: 25px;
+                
+            }
+            .logo-container {
+                width: 80%;
+                height: 30%;
+                border: 3px solid #00c363;
+                border-radius: 20px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .clickable-text {
+                text-decoration: underline; 
+                color: rgb(133, 27, 255); 
+                margin-top: 10px; 
+                cursor: pointer;
+            }
+            .clickable-text:hover {
+                text-decoration: underline; 
+                color: rgb(27, 190, 255); 
+                margin-top: 10px; 
+                cursor: pointer;
+            }
+
+            img {
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="nav-bar">
+            <a href="home.html" class="nav-button" style="margin-left: 10%;">Home</a>
+            <a href="checkout.html" class="nav-button">Book Date</a>
+            <a href="services.html" class="nav-button">Services</a>
+            <!-- <marquee  scrollamount = 5000><a href="index.html" class="nav-button" style="margin-left: 40%;">Logout</a></marquee> -->
+            <a href="index.html" class="nav-button" style="margin-left: 40%;">Logout</a>
+        </div>
+
+        <div id="main-body" class="container">
+
+                <div class="login-box-container">
+                    <div class="login-box-half" style="display: flex; align-items: flex-start; overflow: scroll;">
+                        <div class="login-box"> 
+                            <table>
+                                <tr style="display: flex; align-items: center; justify-content: center;">
+                                    <h3 src="https://placehold.it/300x300" style="margin: 20px; margin-top: 1200px;" alt="">Click To Remove From Details</h3>
+                                </tr>
+                                <tr style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="images\insidewash (1).png" style="margin: 20px;" alt="">
+                                </tr>
+                                <tr style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="images\insidesweep.png" style="margin: 20px;" alt="">
+                                </tr>
+                                <tr style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="images\insidewipe.png" style="margin: 20px;" alt="">
+                                </tr>
+                                <tr style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="images\insidesteam (1).png" style="margin: 20px;" alt="">
+                                </tr>
+                                <tr style="display: flex; align-items: center; justify-content: center;">
+                                    <img src="images\outside wash.png" style="margin: 20px;" alt="">
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    </div>
+                    <div class="login-box-half">
+                        <div class="login-box">
+                            <input type="text" placeholder="Car Model" style="margin-top: 0px;">
+                            <input type="text" placeholder="Address">
+                            <input type="text" id="extra" placeholder="Extra Details...">
+                            <p style="width: 50%; text-align: center; margin: 0;">Reference pictues should include 3 pictures of the inside, and 1 picture of the outside of your car</p>
+                            <button class="newbutton" style="margin: 0; margin-top: 10px;">Reference Picture 1</button>
+                            <button class="newbutton">Reference Picture 2</button>
+                            <button class="newbutton" style="margin: 0;">Reference Picture 3</button>
+                            <button class="newbutton">Reference Picture 4</button>
+                            <h4 style="font-size: medium;">Estimated Total: $180</h4>
+                            <a href="placed.html" id="login-button">Submit Details</a>
+                        </div>
+                    </div>
+                </div>  
+                 
+            </div>
+            <div class="nav-bar" style="display: flex; flex-direction: column;">
+                <p style="margin-left: 3%; margin-top: 0.3%; color: white;">Phone: (412)-315-8640</p>
+                <p style="margin-left: 3%; color: white;">Email: dpkle123@gmail.com</p>
+                    <script src="/capstone1/scripts/bootstrap.bundle.js"></script> 
+                </div>
+
+        
+    </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/capstone1/css/bootstrap.css" rel="stylesheet">
+        
+        <style style="display: block;">
+            @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+            body {
+                font-family: 'Fredoka One', cursive; 
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                display: flex; 
+                flex-direction: column;
+            }
+            button {
+                height: 100%;
+                background: transparent;
+                color: white;
+                width: 10%;
+                font-size: large;
+                border: 0px;
+            }
+            button:hover {
+                background: white;
+                color: black;
+            }
+            ::-webkit-scrollbar {
+                width: 0px;
+                background: transparent;
+            }
+            #login-button {
+                height: 40px;
+                background: #00c363;
+                color: white;
+                width: 30%;
+                font-size: large;
+                border: 0px;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+            }
+            #login-button:hover {
+                background: white;
+                color: black;
+                border: 3px solid #00c363;
+            }
+            input {
+                text-align: center;
+                border: 3px solid #00c363;
+                border-radius: 10px;
+                margin: 15px;
+                width: 70%; 
+                height: 60px;
+                
+            }
+            .nav-bar {
+                background-color: #00c363;
+                height: 8vh;
+                width: 100%;
+            }
+            #main-body {
+                height: 84vh;
+                width: 100%;
+                padding: 0;
+                overflow: scroll;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .login-box {
+                width: 100%;
+                height: 65vh;
+                border: 6px solid #00c363;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .login-box-container {
+                width: 45%
+            }
+            .logo-container {
+                width: 45%;
+                height: 30%;
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .clickable-text {
+                text-decoration: underline; 
+                color: rgb(133, 27, 255); 
+                margin-top: 10px; 
+                cursor: pointer;
+            }
+            .clickable-text:hover {
+                text-decoration: underline; 
+                color: rgb(27, 190, 255); 
+                margin-top: 10px; 
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="nav-bar"></div>
+
+        <div id="main-body" class="container">
+                <div class="login-box-container">
+                    <div class="login-box">
+                        <div class="logo-container">
+                            <img style="width: 100%; height: 75%; object-fit: cover;" src="images\giovannilogo.png" alt="">
+                            <h3 style="font-size: medium;">Your Details Have Been Placed!</h3>
+                        </div>
+                        <table style="width: 75%; display: flex; align-items: center; justify-content: center;">
+                            <tr style="display: flex; align-items: center;">
+                                <th>
+                                    <input type="checkbox" style="height: 15px;">
+                                </th>
+                                <th>
+                                    <div style="font-weight: 500; font-size: medium;">Email Additional Information</div>
+                                </th>
+                            </tr>
+                        </table>
+                        <a href="home.html" style="margin-top: 15px; font-size: 15px;" id="login-button">Return To Home Page</a>
+                    </div>
+                </div>  
+                 
+            </div>
+        <div class="nav-bar">
+                <p style="margin-left: 3%; margin-top: 0.3%; color: white;">Phone: (412)-315-8640</p>
+                <p style="margin-left: 3%; color: white;">Email: dpkle123@gmail.com</p>
+                    <script src="/capstone1/scripts/bootstrap.bundle.js"></script> 
+                </div>
+
+        
+    </body>
+</html>
